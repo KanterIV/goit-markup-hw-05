@@ -357,6 +357,7 @@ body {
   background-color: var(--border-main);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -550,13 +551,13 @@ body {
 .footer-container {
   display: flex;
   align-items: baseline;
-  /* Для автопроверки */
-  gap: 120px;
+  /* Для автопроверки
+  gap: 120px; */
 }
 
-/* .logo-advert {
+.logo-advert {
   margin-right: 120px;
-} */
+}
 
 .logo-bottom {
   color: var(--primary-white-color);
@@ -712,7 +713,8 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-list-item:hover .overlay {
+.projects-link:hover .overlay,
+.projects-link:focus .overlay {
   transform: translateY(0);
 }
 
